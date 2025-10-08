@@ -132,10 +132,10 @@ git pull origin main
 | Name              | PRN          | Role                                   | GitHub |
 |-------------------|--------------|----------------------------------------|--------|
 | **Abhishek Patawari** | 23070123006 | Shell Scripting, Cron Automation        | [GitHub Link](#) |
-| **Otniel Jhirad**      | 23070123069 | Alert System & Email Integration       | [GitHub Link](#) |
-| **Devkartik Suresh**   | 23070123045 | Data Logging & Configuration           | [GitHub Link](#) |
-| **Deepti Emmi**        | 23070123049 | Data Visualization & Cleanup Script    | [GitHub Link](#) |
-| **Akshit Mathur**      | 23070123014 | Project Coordination, Testing & Documentation | [GitHub Link](#) |
+| **Otniel Jhirad**      | 23070123069 |Project Coordination, Testing & Documentation        | [GitHub Link](#) |
+| **Devkartik Suresh**   | 23070123045 | Data Visualization & Cleanup Script  [GitHub Link](#) |
+| **Deepti Emmi**        | 23070123049 | Data Logging & Configuration           |   | [GitHub Link](#) |
+| **Akshit Mathur**      | 23070123014 | Alert System & Email Integration | [GitHub Link](#) |
 
 
 
