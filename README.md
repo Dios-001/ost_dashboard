@@ -82,8 +82,11 @@ Step 3: Run the Script
 
 Step 4: Setup Cron Job (for automation)
 
+### Cron Setup
+```bash
 crontab -e
 */10 * * * * /home/$USER/system-health-logger/monitor.sh
+```
 
 This will execute the monitoring script every 10 minutes automatically.
 
