@@ -1,19 +1,24 @@
 # 🖥️ System Health Logger
 
-A simple Python script to **log system resource usage** (CPU, Memory, Disk) at regular intervals. This tool is useful for monitoring performance and serves as a base for further automation or alert systems.
+This project is a **simple system monitoring script** that logs your system's **CPU**, **Memory**, and **Disk usage** along with timestamps into a log file.  
+It automatically creates a `logs` folder and adds a header row to the log file for better readability.
 
 ---
 
 ## 📌 Features
-- Logs CPU, memory, and disk usage
-- Auto-creates `logs/` directory if not present
-- Uses configurable file paths via `config.json`
-- Timestamped entries for easy tracking
+- Logs CPU, Memory, and Disk usage with timestamps  
+- Automatically creates `logs` folder if it doesn’t exist  
+- Adds a header line to the log file if it’s empty  
+- Uses `psutil` for system stats  
 
 ---
 
-## 🛠️ Requirements
-- Python 3.8+
-- Install dependencies:
-```bash
-pip install psutil
+## 🛠️ Technologies Used
+- **Python 3**
+- **psutil** library
+- Built-in modules: `datetime`, `os`, `json`
+
+---
+
+## 📁 Project Structure
+
