@@ -105,3 +105,7 @@ git push origin main
 - **health_log.txt** — Raw data logs (timestamp, CPU, memory, disk usage)
 - **summary.txt** — Health summary report (average/peak usage, status verdict)
 - **usage_plot.png** — Graph showing trends over time
+
+## Summary
+
+This project showcases how scripting, monitoring, automation, and collaboration can come together to form a reliable and useful system performance tool. The modular approach, real-time analytics, and end-to-end automation make it suitable for both personal use and small-scale production systems.
