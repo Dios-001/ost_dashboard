@@ -1,6 +1,6 @@
 ---
 
-🖥️ System Health Logger and Auto-Report Suite
+🖥️ # System Health Logger and Auto-Report Suite
 
 This project monitors CPU, memory, disk, and network usage periodically, logs system performance data, generates visual reports, and sends automated alerts when thresholds are exceeded.
 It combines Shell scripting, Python automation, and cron jobs to provide an efficient, lightweight system health monitoring solution.
