@@ -60,16 +60,6 @@ system-health-logger/
 - **System Analytics:** Generates average, peak, and health status summaries.  
  
 
-##  Contributors
-
-| Name | PRN | Role | GitHub | PRs |
-|------|-----|------|--------|-----|
-| **Abhishek Patawari** | 23070123006 | Shell Automation & Integration | [github.com/abhishekpatawari](https://github.com/abhishekpatawari) | #11, #12 |
-| **Deepti Emmi** | 23070123024 | Logging Module & File Handling | [github.com/DeeptiEmmi](https://github.com/DeeptiEmmi) | #9, #16 |
-| **Akshit Mathur** | 23070123048 | Alert System & Configuration | [github.com/AkshitMathur](https://github.com/AkshitMathur) | #10 |
-| **Otniel Jhirad** | 23070123059 | Data Visualization & Testing | [github.com/0tniel](https://github.com/0tniel) | #8 |
-| **Devkarthik Suresh** | 230701230XX | System Analyzer & Performance Summary | [github.com/DevkarthikSuresh](https://github.com/DevkarthikSuresh) | #19 #20 |
-
 
 
 ## Project Tracking
@@ -109,3 +99,13 @@ git push origin main
 ## Summary
 
 This project showcases how scripting, monitoring, automation, and collaboration can come together to form a reliable and useful system performance tool. The modular approach, real-time analytics, and end-to-end automation make it suitable for both personal use and small-scale production systems.
+
+##  Contributors
+
+| Name | PRN | Role | GitHub | PRs |
+|------|-----|------|--------|-----|
+| **Abhishek Patawari** | 23070123006 | Shell Automation & Integration | [github.com/abhishekpatawari](https://github.com/abhishekpatawari) | #11, #12 |
+| **Deepti Emmi** | 23070123024 | Logging Module & File Handling | [github.com/DeeptiEmmi](https://github.com/DeeptiEmmi) | #9, #21 |
+| **Akshit Mathur** | 23070123048 | Alert System & Configuration | [github.com/AkshitMathur](https://github.com/AkshitMathur) | #10 |
+| **Otniel Jhirad** | 23070123059 | Data Visualization & Testing | [github.com/0tniel](https://github.com/0tniel) | #8 |
+| **Devkarthik Suresh** | 230701230XX | System Analyzer & Performance Summary | [github.com/DevkarthikSuresh](https://github.com/DevkarthikSuresh) | #19 #20 |
