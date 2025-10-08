@@ -26,7 +26,3 @@ print(f"Peak CPU Usage     : {peak_cpu:.2f}%")
 print(f"Average Memory Use : {avg_mem:.2f}%")
 print(f"Peak Disk Usage    : {peak_disk:.2f}%")
 
-if peak_cpu > 80:
-    print("⚠️  System faced high CPU load recently.")
-else:
-    print("✅ System performance is healthy.")
