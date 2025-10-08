@@ -1,19 +1,30 @@
-# 🖥️ System Health Logger
+# System Health Logger and Auto-Report Suite
 
-A simple Python script to **log system resource usage** (CPU, Memory, Disk) at regular intervals. This tool is useful for monitoring performance and serves as a base for further automation or alert systems.
+This project monitors CPU, memory, disk, and network usage periodically, logs data, generates visual reports, and sends alerts when thresholds are exceeded.
 
----
-
-## 📌 Features
-- Logs CPU, memory, and disk usage
-- Auto-creates `logs/` directory if not present
-- Uses configurable file paths via `config.json`
-- Timestamped entries for easy tracking
-
----
-
-## 🛠️ Requirements
-- Python 3.8+
-- Install dependencies:
+## How to Run
 ```bash
-pip install psutil
+chmod +x monitor.sh cleanup.sh
+./monitor.sh
+```
+
+### Cron Setup
+```bash
+crontab -e
+*/10 * * * * /home/$USER/system-health-logger/monitor.sh
+```
+
+### Git Commands Used
+```bash
+git init
+git add .
+git commit -m "initial commit"
+git push origin main
+```
+
+### Contributors
+- Abhishek Patawari
+- Otniel Jhirad
+- Dev Suresh Kartik
+- Deepti Emmi
+- Akshit Mathur
