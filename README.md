@@ -6,7 +6,7 @@ A project that monitors system performance, automates alerts, visualizes data, a
 
 ---
 
-## ⚙️ Introduction
+## Introduction
 
 This project integrates multiple scripts working together:
 - **monitor.sh** → Orchestrates execution and scheduling
@@ -19,7 +19,7 @@ All scripts are modular, easy to integrate, and run automatically using a cron j
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component    | Technology                         |
 |--------------|-------------------------------------|
@@ -31,7 +31,7 @@ All scripts are modular, easy to integrate, and run automatically using a cron j
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 system-health-logger/
@@ -54,7 +54,7 @@ system-health-logger/
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
 - **End-to-End Automation:** Fully scheduled execution through cron jobs.  
 - **Email Alerting:** Real-time notifications for CPU spikes.  
@@ -64,7 +64,7 @@ system-health-logger/
 
 ---
 
-## 🧑‍🤝‍🧑 Contributors
+##  Contributors
 
 | Name | PRN | Role | GitHub | PRs |
 |------|-----|------|--------|-----|
@@ -76,15 +76,14 @@ system-health-logger/
 
 ---
 
-## 🕒 Project Tracking
+## Project Tracking
 
-The entire project was completed within a single day through synchronized teamwork and continuous GitHub activity.  
+The entire project was completed through synchronized teamwork and continuous GitHub activity.  
 Each member worked on an assigned branch, raised issues, committed code with descriptive messages, and merged through peer-reviewed pull requests.  
-Commit history and issue tracking serve as transparent evidence of collaboration and timely completion.
 
 ---
 
-## 💻 Usage Instructions
+## Usage Instructions
 
 1. **Clone the repository**
    ```bash
