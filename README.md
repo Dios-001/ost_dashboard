@@ -110,7 +110,9 @@ Modify these values as per your system and email credentials.
 
 ---
 
-🧾 Git Commands Used
+🧾 ### Git Commands Used
+
+```bash
 
 git init
 git add .
@@ -120,6 +122,7 @@ git checkout feature-logger
 git push origin main
 git merge feature-logger
 git pull origin main
+```
 
 
 ---
