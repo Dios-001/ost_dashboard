@@ -1,13 +1,28 @@
-import psutil, smtplib, json
+import pandas as pd
+import matplotlib.pyplot as plt
 
-config = json.load(open("config.json"))
-cpu_limit = config["cpu_limit"]
+# Read log file
+data = []
+with open("logs/health_log.txt") as f:
+    for line in f:
+        parts = line.strip().split(',')
+        if len(parts) == 4:
+            cpu = float(parts[1].split('=')[1])
+            mem = float(parts[2].split('=')[1])
+            disk = float(parts[3].split('=')[1])
+            data.append([cpu, mem, disk])
 
-cpu = psutil.cpu_percent(interval=1)
-if cpu > cpu_limit:
-    message = f"Subject: ⚠️ High CPU Alert!\n\nCPU usage = {cpu}% exceeded limit {cpu_limit}%"
-    with smtplib.SMTP("smtp.gmail.com", 587) as server:
-        server.starttls()
-        server.login(config["email_user"], config["email_pass"])
-        server.sendmail(config["email_user"], config["email_to"], message)
+df = pd.DataFrame(data, columns=["CPU", "Memory", "Disk"])
+
+# Compute summary
+avg_cpu = df["CPU"].mean()
+peak_cpu = df["CPU"].max()
+avg_mem = df["Memory"].mean()
+peak_disk = df["Disk"].max()
+
+print("===== SYSTEM HEALTH SUMMARY =====")
+print(f"Average CPU Usage  : {avg_cpu:.2f}%")
+print(f"Peak CPU Usage     : {peak_cpu:.2f}%")
+print(f"Average Memory Use : {avg_mem:.2f}%")
+print(f"Peak Disk Usage    : {peak_disk:.2f}%")
 
