@@ -2,6 +2,7 @@
 
 A project that monitors system performance, automates alerts, visualizes data, and generates analytics — built using **Shell scripting**, **Python**, and **cron automation**.
 
+
 > **Goal:** To design an end-to-end automated system that logs CPU, memory, and disk usage, sends alert notifications when thresholds are crossed, and provides real-time analytics and visualizations — all while demonstrating GitHub collaboration and scripting proficiency.
 
 
@@ -99,3 +100,8 @@ git add .
 git commit -m "initial commit"
 git push origin main
 ```
+## Sample Outputs
+
+- **health_log.txt** — Raw data logs (timestamp, CPU, memory, disk usage)
+- **summary.txt** — Health summary report (average/peak usage, status verdict)
+- **usage_plot.png** — Graph showing trends over time
