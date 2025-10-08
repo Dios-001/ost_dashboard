@@ -67,11 +67,18 @@ cd system-health-logger
 
 Step 2: Give Execution Permission
 
+
+```bash
 chmod +x monitor.sh cleanup.sh
+
+```
 
 Step 3: Run the Script
 
+```bash
 ./monitor.sh
+
+```
 
 Step 4: Setup Cron Job (for automation)
 
