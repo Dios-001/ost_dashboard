@@ -80,7 +80,7 @@ Each member worked on an assigned branch, raised issues, committed code with des
 
 ## Usage Instructions
 
-## How to Run
+### How to Run
 ```bash
 chmod +x monitor.sh cleanup.sh
 ./monitor.sh
