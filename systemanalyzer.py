@@ -1,3 +1,4 @@
+#Import modules
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
@@ -32,6 +33,7 @@ peak_cpu = df["CPU"].max()
 avg_mem = df["Memory"].mean()
 peak_disk = df["Disk"].max()
 
+#Print summary
 summary = (
     "===== SYSTEM HEALTH SUMMARY =====\n"
     f"Average CPU Usage  : {avg_cpu:.2f}%\n"
