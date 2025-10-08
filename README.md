@@ -23,8 +23,8 @@ git push origin main
 ```
 
 ### Contributors
-- Abhishek Patawari
-- Otniel Jhirad
-- Dev Suresh Kartik
-- Deepti Emmi
-- Akshit Mathur
+- Abhishek Patawari(23070123006)
+- Otniel Jhirad(23070123069)
+- Devkartik Suresh(23070123045)
+- Deepti Emmi(23070123049)
+- Akshit Mathur(23070123014)
