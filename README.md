@@ -1,22 +1,19 @@
-# 🖥️ System Health Visualizer 📊
+# 🖥️ System Health Logger
 
-A Python script to read system health logs and plot CPU, Memory, and Disk usage over time.  
-The generated graph provides a visual overview of system performance.
+A simple Python script to **log system resource usage** (CPU, Memory, Disk) at regular intervals. This tool is useful for monitoring performance and serves as a base for further automation or alert systems.
 
 ---
 
 ## 📌 Features
-- Reads logs from `logs/health_log.txt`  
-- Plots CPU, Memory & Disk usage in one graph  
-- Saves the plot as `logs/usage_plot.png`  
-- Quick visualization of system performance trends  
+- Logs CPU, memory, and disk usage
+- Auto-creates `logs/` directory if not present
+- Uses configurable file paths via `config.json`
+- Timestamped entries for easy tracking
 
 ---
 
 ## 🛠️ Requirements
-- Python 3.x  
+- Python 3.8+
 - Install dependencies:
 ```bash
-pip install matplotlib
-
-
+pip install psutil
