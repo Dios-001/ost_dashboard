@@ -4,7 +4,6 @@ A project that monitors system performance, automates alerts, visualizes data, a
 
 > **Goal:** To design an end-to-end automated system that logs CPU, memory, and disk usage, sends alert notifications when thresholds are crossed, and provides real-time analytics and visualizations — all while demonstrating GitHub collaboration and scripting proficiency.
 
----
 
 ## Introduction
 
@@ -17,7 +16,7 @@ This project integrates multiple scripts working together:
 
 All scripts are modular, easy to integrate, and run automatically using a cron job.
 
----
+
 
 ## Tech Stack
 
@@ -29,7 +28,6 @@ All scripts are modular, easy to integrate, and run automatically using a cron j
 | Platform     | Linux / Ubuntu                      |
 | Collaboration| GitHub (branches, PRs, issues)      |
 
----
 
 ## Folder Structure
 
@@ -49,10 +47,9 @@ system-health-logger/
 └── .gitignore
 ```
 
----
 
 
----
+
 
 ##  Key Features
 
@@ -60,9 +57,7 @@ system-health-logger/
 - **Email Alerting:** Real-time notifications for CPU spikes.  
 - **Data Visualization:** Graphical representation of CPU, Memory, and Disk trends.  
 - **System Analytics:** Generates average, peak, and health status summaries.  
-- **Collaborative Workflow:** Developed using separate branches, issues, and PRs.  
-
----
+ 
 
 ##  Contributors
 
@@ -74,18 +69,33 @@ system-health-logger/
 | **Otniel Jhirad** | 23070123059 | Data Visualization & Testing | [github.com/0tniel](https://github.com/0tniel) | #8 |
 | **Devkarthik Suresh** | 230701230XX | System Analyzer & Performance Summary | [github.com/DevkarthikSuresh](https://github.com/DevkarthikSuresh) | #19 #20 |
 
----
+
 
 ## Project Tracking
 
 The entire project was completed through synchronized teamwork and continuous GitHub activity.  
 Each member worked on an assigned branch, raised issues, committed code with descriptive messages, and merged through peer-reviewed pull requests.  
 
----
+
 
 ## Usage Instructions
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/<username>/system-health-logger.git
-   cd system-health-logger
+## How to Run
+```bash
+chmod +x monitor.sh cleanup.sh
+./monitor.sh
+```
+
+### Cron Setup
+```bash
+crontab -e
+*/10 * * * * /home/$USER/system-health-logger/monitor.sh
+```
+
+### Git Commands Used
+```bash
+git init
+git add .
+git commit -m "initial commit"
+git push origin main
+```
