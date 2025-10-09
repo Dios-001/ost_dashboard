@@ -1,111 +1,146 @@
-# System Health Logger and Alert Automation Suite
+# Smart System Monitor
 
-A project that monitors system performance, automates alerts, visualizes data, and generates analytics — built using **Shell scripting**, **Python**, and **cron automation**.
+> An end-to-end automation framework to monitor, visualize, and alert on system performance — built using **Shell**, **Python**, and **Cron Jobs**.
 
+## Overview
 
-> **Goal:** To design an end-to-end automated system that logs CPU, memory, and disk usage, sends alert notifications when thresholds are crossed, and provides real-time analytics and visualizations — all while demonstrating GitHub collaboration and scripting proficiency.
+This project continuously tracks **CPU**, **Memory**, and **Disk usage**, automatically logs metrics, sends **real-time alerts**, and visualizes performance trends.  
+It demonstrates proficiency in:
+- Shell automation  
+- Python scripting  
+- System monitoring and analytics  
+- GitHub-based collaboration  
 
+## Architecture
 
-## Introduction
-
-This project integrates multiple scripts working together:
-- **monitor.sh** → Orchestrates execution and scheduling
-- **logger.py** → Collects and logs system performance metrics
-- **alert.py** → Sends email alerts when thresholds exceed limits
-- **visualize.py** → Plots CPU, memory, and disk usage over time
-- **analyzer.py** → Summarizes system health with performance statistics
-
-All scripts are modular, easy to integrate, and run automatically using a cron job.
-
-
+```
++-------------------+
+|   monitor.sh      |  →  Orchestrates execution and scheduling
++-------------------+
+|   logger.py       |  →  Collects and logs CPU, memory, and disk metrics
+|   alert.py        |  →  Sends alerts when usage exceeds threshold
+|   analyzer.py     |  →  Summarizes health data and generates reports
+|   visualize.py    |  →  Plots performance trends using Matplotlib
++-------------------+
+|   config.json     |  →  Thresholds, email settings, file paths
++-------------------+
+```
 
 ## Tech Stack
 
-| Component    | Technology                         |
-|--------------|-------------------------------------|
-| Languages    | Python, Bash                        |
-| Libraries    | `psutil`, `matplotlib`, `pandas`    |
-| Automation   | Cron jobs                           |
-| Platform     | Linux / Ubuntu                      |
-| Collaboration| GitHub (branches, PRs, issues)      |
+| Category | Tools / Libraries |
+|-----------|------------------|
+| **Languages** | Python, Bash |
+| **Libraries** | `psutil`, `pandas`, `matplotlib`, `smtplib` |
+| **Automation** | Cron (Linux) |
+| **Collaboration** | GitHub (branches, PRs, issue tracking) |
+| **Platform** | Ubuntu / Linux |
 
-
-## Folder Structure
+## Folder Layout
 
 ```
 system-health-logger/
 ├── monitor.sh
 ├── logger.py
 ├── alert.py
-├── visualize.py
 ├── analyzer.py
+├── visualize.py
 ├── config.json
 ├── logs/
 │   ├── health_log.txt
 │   ├── summary.txt
 │   └── usage_plot.png
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
+## Key Features
 
+- **Automated Logging:** Continuously records CPU, memory, and disk usage.  
+- **Email Alerts (optional):** Sends notifications when CPU crosses defined thresholds.  
+- **Visualization:** Displays resource usage trends via `matplotlib` graphs (CPU, Memory, Disk).  
+- **Performance Summary:** Analyzer script computes averages, peaks, health verdict, and exports to text file.  
+- **Cron Automation:** Executes scripts automatically at regular intervals.  
+- **Collaborative GitHub Workflow:** Demonstrates version control, issues, and pull requests.  
 
+## Quick Start Guide
 
-
-##  Key Features
-
-- **End-to-End Automation:** Fully scheduled execution through cron jobs.  
-- **Email Alerting:** Real-time notifications for CPU spikes.  
-- **Data Visualization:** Graphical representation of CPU, Memory, and Disk trends.  
-- **System Analytics:** Generates average, peak, and health status summaries.  
- 
-
-
-
-## Project Tracking
-
-The entire project was completed through synchronized teamwork and continuous GitHub activity.  
-Each member worked on an assigned branch, raised issues, committed code with descriptive messages, and merged through peer-reviewed pull requests.  
-
-
-
-## Usage Instructions
-
-### How to Run
+### 1. Clone Repository
 ```bash
-chmod +x monitor.sh cleanup.sh
+git clone https://github.com/Dios-001/smart-system-monitor.git
+cd smart-system-monitor
+```
+
+### 2. Configure Settings
+```json
+{
+  "log_file": "logs/health_log.txt",
+  "cpu_limit": 80,
+  "email_user": "sender@gmail.com",
+  "email_pass": "app_password",
+  "email_to": "receiver@gmail.com"
+}
+```
+
+### 3. Run Locally
+```bash
+chmod +x monitor.sh
 ./monitor.sh
 ```
 
-### Cron Setup
+### 4. Schedule with Cron
+Set up automatic monitoring every 10 minutes:
 ```bash
 crontab -e
 */10 * * * * /home/$USER/system-health-logger/monitor.sh
 ```
 
-### Git Commands Used
-```bash
-git init
-git add .
-git commit -m "initial commit"
-git push origin main
-```
+## Script Responsibilities
+
+| Script | Function |
+|--------|-----------|
+| **monitor.sh** | Master script that triggers Python modules in sequence |
+| **logger.py** | Gathers CPU, memory, and disk stats using `psutil` |
+| **alert.py** | Checks thresholds and sends mail via `smtplib` |
+| **analyzer.py** | Calculates averages, peaks, health verdict, and exports report |
+| **visualize.py** | Generates `usage_plot.png` graph showing system usage trends |
+
 ## Sample Outputs
 
-- **health_log.txt** — Raw data logs (timestamp, CPU, memory, disk usage)
-- **summary.txt** — Health summary report (average/peak usage, status verdict)
-- **usage_plot.png** — Graph showing trends over time
+| File | Description |
+|------|--------------|
+| **logs/health_log.txt** | Generated by `logger.py` each cycle. Contains timestamped raw readings of CPU, memory, and disk usage. |
+| **logs/summary.txt** | Created by `analyzer.py`. Shows average and peak usage statistics with system health verdict and timestamp. |
+| **logs/usage_plot.png** | Produced by `visualize.py`. A line graph visualizing CPU, memory, and disk performance trends. |
+| **Email Alert (SMTP)** | Sent by `alert.py` when CPU usage exceeds the limit set in `config.json`. Provides details of the spike with timestamp. |
 
-## Summary
+## Git Workflow & Collaboration
 
-This project showcases how scripting, monitoring, automation, and collaboration can come together to form a reliable and useful system performance tool. The modular approach, real-time analytics, and end-to-end automation make it suitable for both personal use and small-scale production systems.
+Each contributor maintained a personal branch, committed descriptive changes, and raised pull requests for peer review.
 
-##  Contributors
+```bash
+git checkout -b feature/logger
+git add logger.py
+git commit -m "Add system logging module"
+git push origin feature/logger
+```
 
-| Name | PRN | Role | GitHub | PRs |
-|------|-----|------|--------|-----|
-| **Abhishek Patawari** | 23070123006 | Shell Automation & Integration | [github.com/abhishekpatawari](https://github.com/abhishekpatawari) | #11, #12 |
-| **Deepti Emmi** | 23070123024 | Logging Module & File Handling | [github.com/DeeptiEmmi](https://github.com/DeeptiEmmi) | #9, #21 |
-| **Akshit Mathur** | 23070123048 | Alert System & Configuration | [github.com/AkshitMathur](https://github.com/AkshitMathur) | #10 |
-| **Otniel Jhirad** | 23070123059 | Data Visualization & Testing | [github.com/0tniel](https://github.com/0tniel) | #8 |
-| **Devkarthik Suresh** | 230701230XX | System Analyzer & Performance Summary | [github.com/DevkarthikSuresh](https://github.com/DevkarthikSuresh) | #19 #20 |
+Pull requests were merged after review using GitHub’s issue-tracking and version control features.
+
+## Contributors
+
+| Name | PRN | Role | GitHub |
+|------|-----|------|--------|
+| Abhishek Patawari | 23070123006 | Shell & Cron Automation | [@abhishekpatawari](https://github.com/abhishekpatawari) |
+| Deepti Emmi | 23070123024 | Logging & File Handling | [@DeeptiEmmi](https://github.com/DeeptiEmmi) |
+| Akshit Mathur | 23070123048 | Alerts & Configuration | [@AkshitMathur](https://github.com/AkshitMathur) |
+| Otniel Jhirad | 23070123059 | Visualization & Testing | [@0tniel](https://github.com/0tniel) |
+| Devkarthik Suresh | 230701230XX | Analytics & Summary Engine | [@DevkarthikSuresh](https://github.com/DevkarthikSuresh) |
+
+## Conclusion
+
+This project demonstrates how automation, analytics, and collaboration combine to deliver a robust system monitoring suite.  
+Its modular design and real-time features make it ideal for academic demonstration or scaling into a lightweight DevOps utility.
+
+## License
+
+This project is licensed under the **MIT License** — you may fork, modify, and extend it.
