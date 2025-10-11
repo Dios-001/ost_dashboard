@@ -105,7 +105,7 @@ This project showcases how scripting, monitoring, automation, and collaboration 
 | Name | PRN | Role | GitHub | PRs |
 |------|-----|------|--------|-----|
 | **Abhishek Patawari** | 23070123006 | Shell Automation & Integration | [github.com/abhishekpatawari](https://github.com/abhishekpatawari) | #11, #12 |
-| **Deepti Emmi** | 23070123024 | Logging Module & File Handling | [github.com/DeeptiEmmi](https://github.com/DeeptiEmmi) | #9, #21 |
-| **Akshit Mathur** | 23070123048 | Alert System & Configuration | [github.com/AkshitMathur](https://github.com/AkshitMathur) | #10 |
-| **Otniel Jhirad** | 23070123059 | Data Visualization & Testing | [github.com/0tniel](https://github.com/0tniel) | #8 |
+| **Deepti Emmi** | 23070123049 | Logging Module & File Handling | [github.com/DeeptiEmmi](https://github.com/DeeptiEmmi) | #9, #21 |
+| **Akshit Mathur** | 23070123014 | Alert System & Configuration | [github.com/AkshitMathur](https://github.com/AkshitMathur) | #10 |
+| **Otniel Jhirad** | 23070123069 | Data Visualization & Testing | [github.com/0tniel](https://github.com/0tniel) | #8 |
 | **Devkarthik Suresh** | 23070123045 | System Analyzer & Performance Summary | [github.com/DevkarthikSuresh](https://github.com/DevkarthikSuresh) | #19 #20 |
